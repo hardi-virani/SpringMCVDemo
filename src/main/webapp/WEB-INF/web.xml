@@ -7,13 +7,14 @@
     <web-app>
 
     <servlet>
-        <servlet-name>spring</servlet-name>
+<!--        this name is basically our servlet will be searched for. Eg:earlier it was spring, and we had spring-servlet. Not star. we wil have to remname it as, star-servlet in WEB-INF-->
+        <servlet-name>star</servlet-name>
 <!--        just find dispatcher servlet in your lib in project struture and copy - paste it, you will get this-->
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>spring</servlet-name>
+        <servlet-name>star</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
