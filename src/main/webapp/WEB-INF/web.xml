@@ -8,6 +8,7 @@
 
     <servlet>
         <servlet-name>spring</servlet-name>
+<!--        just find dispatcher servlet in your lib in project struture and copy - paste it, you will get this-->
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     </servlet>
 
