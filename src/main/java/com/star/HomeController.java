@@ -18,22 +18,23 @@ public class HomeController {
         return mv;
     }
 
-    @RequestMapping("/Add")
-    public ModelAndView add(@RequestParam("num1") int num1, @RequestParam("num2") int num2, ModelAndView mv) {
-
-        int result = num1 + num2;
-
-
-        mv.addObject("Answer", result);
-        mv.setViewName("result");
-
-
-        return mv;
-    }
+//    @RequestMapping("/Add")
+//    public ModelAndView add(@RequestParam("num1") int num1, @RequestParam("num2") int num2, ModelAndView mv) {
+//
+//        int result = num1 + num2;
+//
+//
+//        mv.addObject("Answer", result);
+//        mv.setViewName("result");
+//
+//
+//        return mv;
+//    }
 
     @RequestMapping("/AddAlien")
-    public String AddAlien(Alien alien) {
+    public String AddAlien(Alien alien, Model model) {
 
+        model.addAttribute("alien", alien);
         return "result";
     }
 
